@@ -215,6 +215,7 @@ video {
   display: -ms-flexbox;
   display: flex;
 }
+
 .owl-carousel .owl-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -530,8 +531,8 @@ a#logo {
 .services-list .item {
   background-color: rgba(250,250,250,0.25);
   border-radius: 10px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 .service-icon {
   display:block;
@@ -560,6 +561,7 @@ a#logo {
 .owl-carousel .owl-dots .owl-dot {
   border-radius: 3px;
 }
+
 .owl-dots {
     display: -webkit-box;
     display: -webkit-flex;
@@ -586,6 +588,21 @@ a#logo {
     background: #fff
 }
 
+.owl-carousel .owl-dots .owl-dot:first-child:before {
+  font-size: 10px;
+  content: "1";
+  color: #fff
+}
+.owl-carousel .owl-dots .owl-dot:nth-child(even):before {
+  content: "2";
+  color: #fff;
+  font-size: 10px;
+}
+.owl-carousel .owl-dots .owl-dot:last-child:before {
+  content: "3";
+  color: #fff;
+  font-size: 10px;
+}
 /*==============================================
 07. WORK BLOCK CSS
 ================================================*/
@@ -642,7 +659,7 @@ a#logo {
 }
 
 .thumb > img {
-  height: 380px;
+  height: 430px;
   object-fit: cover;
 }
 
