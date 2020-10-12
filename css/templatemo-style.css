@@ -659,7 +659,7 @@ a#logo {
 }
 
 .thumb > img {
-  height: 430px;
+  height: 380px;
   object-fit: cover;
 }
 
